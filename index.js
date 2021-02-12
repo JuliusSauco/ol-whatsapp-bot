@@ -109,7 +109,7 @@ const client = new WAConnection()
 
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code is ready, subscribe Samu330`)
+   console.log(`[ ${time} ] QR code is ready`)
 })
 
 client.on('credentials-updated', () => {
